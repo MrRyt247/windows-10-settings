@@ -27,13 +27,13 @@
     background-color: var(--white);
 }
 
-nav {
+.title-bar {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
 }
 
-nav p {
+.title-bar p {
     margin: 10px 12px;
     color: black;
     font-size: smaller;
@@ -82,7 +82,7 @@ nav p {
 header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    width: 100vw;
+    width: 100%;
     padding: 0 3rem 2rem 3rem;
     gap: 1rem;
     background-color: var(--white);
@@ -125,7 +125,7 @@ header button {
     border-radius: 0;
     border: 0;
     background-color: var(--dgrey);
-    padding: 7px 35px;
+    padding: .44rem 2.4em;
 }
 
 p {
@@ -148,6 +148,8 @@ a {
 }
 
 .searchbar {
+    display: flex;
+    align-items: center;
     border: solid 2px;
     width: 350px;
     height: 34px;
@@ -164,6 +166,10 @@ input {
     height: 30px;
     border: none;
     outline: none;
+}
+
+.wrapper i {
+    width: 16px;
 }
 
 #buttons {
@@ -255,4 +261,43 @@ input {
 
 .loader i {
     color: white;
+}
+
+@media screen and (max-width: 475px) { 
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em;
+        gap: 1rem;
+    }
+
+    .profile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-grow: 0;
+        padding: 0;
+    }
+
+    header button {
+        padding: .44rem 2em;
+    }    
+
+    .searchbar {
+        display: flex;
+        align-items: center;
+        border: solid 2px;
+        width: 80svw;
+        margin-inline: 2em;
+        height: 34px;
+        padding: 0 5px;
+        border-color: var(--lgrey);
+    }
+
+    input {
+        width: 80svw;
+        height: 30px;
+        border: none;
+        outline: none;
+    }       
 }
