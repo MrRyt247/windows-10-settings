@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Windows Settings</title>
+</head>
+<body>
+    <nav>
+        <p>Settings</p>
+        <div class="command--box">
+            <button><i class="fa fa-window-minimize"></i></button>
+            <button><i class="fa fa-window-maximize"></i></button>
+            <button><i class="fa fa-close"></i></button>
+        </div>
+    </nav>
+    <header>
+        <div class="profile">
+            <div class="dp">
+                <i class="fa fa-user-o fa-5x"></i>
+            </div>    
+            <div class="descp">
+                <h2>HP</h2>
+                <p>Local Account</p>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+        <div class="register">
+            <h2>Get even more out of Windows</h2>
+            <p>With few quick selections, you'll be on your way to enjoying the full Microsoft experience.</p>
+            <button>Let's go!</button>
+            <a href="#">Skip for now</a>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="searchbar" id="searchbar">
+                <input type="search" id='input' placeholder="Find a setting" autofocus><i class="fa fa-search fa-flip-horizontal"></i>
+            </div>
+        </div>
+        <br>
+        <div id="buttons">
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-laptop fa-2x fa-pull-left fa-fw"></i>
+                    <h4>System</h4>
+                    <p>Display, sound, notifications, power</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">        
+                    <i class="fa fa-keyboard-o fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Devices</h4>
+                    <p>Bluetooth, printers, mouse</p>
+                </div> 
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-mobile-phone fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Phone</h4>
+                    <p>Link your Android, iPhone</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-globe fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Network & Internet</h4>
+                    <p>WiFi, airplane mode, VPN</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <span class="fa-stack fa-lg fa-pull-left fa-fw">
+                        <i class="fa fa-tv fa-stack-1x fa-fw"></i>
+                        <i class="fa fa-paint-brush fa-stack-1x fa-fw"></i>
+                    </span>
+                    <h4>Personalization</h4>
+                    <p>Background, lockscreen, colors</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-list fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Apps</h4>
+                    <p>Uninstall, defaults, optional features</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-user-o fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Accounts</h4>
+                    <p>Your accounts, email, sync, work, family</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-clock-o fa-2x fa-pull-left fa-flip-horizontal fa-fw"></i>          
+                    <h4>Time & Language</h4>
+                    <p>Speech, region, date</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-gamepad fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Gaming</h4>
+                    <p>Xbox Game Bar, captures, Game Mode</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-universal-access fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Ease of Access</h4>
+                    <p>Narrator, magnifier, high contrast</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-search fa-2x fa-pull-left fa-flip-horizontal fa-fw"></i>
+                    <h4>Search</h4>
+                    <p>Speech, region, date</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-lock fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Privacy</h4>
+                    <p>Location, camera, microphone</p>
+                </div>
+            </button>
+            <button class="button">
+                <div class="button--content">
+                    <i class="fa fa-refresh fa-2x fa-pull-left fa-fw"></i>
+                    <h4>Update & Security</h4>
+                    <p>Windows update, recovery, backup</p>
+                </div>
+            </button>
+        </div>
+    </main>
+    <div class="loader">
+        <i class="fa fa-cog fa-5x"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
